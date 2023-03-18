@@ -1,0 +1,586 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#head-right {
+  font-weight: 500;
+}
+
+#head-right > div {
+  display: inline-block;
+  text-align: center;
+  padding-right: 23px;
+  cursor: pointer;
+}
+
+nav img {
+  width: 40px;
+  height: 40px;
+}
+
+#head-right button {
+  padding: 10px 30px;
+  text-align: center;
+  background-color: #aad236;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#landing {
+  background: url(landing-background.png) no-repeat;
+  height: 100vh;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  padding-top: 300px;
+}
+
+.text h1 {
+  font-size: 53px;
+  width: 100%;
+  letter-spacing: 8.8px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  color: #8b8b99;
+}
+
+.demo {
+  position: relative;
+}
+
+.menu-1,
+.menu-2 {
+  position: absolute;
+  display: none;
+  bottom: 50;
+}
+
+.demo:hover .menu-1 {
+  display: block;
+}
+
+.blocks:hover .menu-2 {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  #head-right div {
+    display: none;
+  }
+
+  .text h1 {
+    font-size: 24px;
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+
+  .text {
+    padding-top: 200px;
+    width: 90%;
+  }
+}
+
+/* 333333333333333333333333333333333section 2 33333333333333333333333333333333 */
+
+.steps-container {
+  display: flex;
+}
+
+.steps-card {
+  width: 25%;
+  text-align: center;
+  height: 400px;
+  padding: 150px 30px;
+  color: #fff;
+}
+
+.card1 {
+  background-color: #5acda6;
+}
+
+.card2 {
+  background-color: #91ac41;
+}
+
+.card3 {
+  background-color: #e4b476;
+}
+
+.card4 {
+  background-color: #f69dad;
+}
+
+.steps-card i {
+  font-size: 96px;
+  margin-bottom: 30px;
+}
+
+.steps-card:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+
+.steps-card h1 {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.steps-card p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .steps-container {
+    display: block;
+  }
+
+  .steps-card {
+    width: 100%;
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+
+/* ##########################page 3############################## */
+#qualities {
+  background-color: #f7eee2;
+  padding-bottom: 100px;
+}
+
+.q-heading {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.q-heading > h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #aad236;
+  letter-spacing: 1px;
+  font-family: "caveat", cursive;
+}
+
+.q-heading > h1 {
+  font-size: 44px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.q-heading > p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #8b8b99;
+  letter-spacing: 1px;
+}
+
+.quality-cards {
+  margin-top: 80px;
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.q-card i {
+  font-size: 60px;
+  background-color: #e3b375;
+  border-radius: 50%;
+  padding: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.q-card h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.q-card {
+  width: 25%;
+}
+
+.q-card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #8b8b99;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .quality-cards {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .q-card {
+    width: 100%;
+  }
+}
+
+/* <!-- ##################### Page 4 ################## -->   */
+
+.shop-cards {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.shopcard {
+  width: 33.3%;
+  text-align: center;
+  padding: 50px;
+  margin: 0 10px;
+  background-color: #f5f6fb;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.shopcard:hover {
+  box-shadow: rgba(128, 128, 128, 0.4) 2px 2px 8px;
+}
+
+.shopcard > img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.shopcard > p {
+  color: #8b8b99;
+  margin-bottom: 25px;
+}
+
+.shopcard > h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.shopcard > h4 {
+  color: #8b8b99;
+  font-weight: 400;
+}
+
+.shopcard-heading > p {
+  width: 50%;
+  margin: auto;
+}
+
+/* ########################## Page 5 ########################33  */
+
+.newsletter {
+  display: flex;
+  width: 100%;
+}
+
+.form-left {
+  width: 70%;
+}
+
+.form-left > img {
+  width: 100%;
+}
+
+.form-right {
+  width: 30%;
+  background-image: url(form2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  margin: 90px 70px auto 90px;
+}
+
+.form > h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.form > p {
+  font-size: 14px;
+  width: 80%;
+  color: #8b8b99;
+  margin-bottom: 50px;
+}
+
+.form input {
+  width: 90%;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 3px;
+  border: none;
+}
+
+.form input {
+  outline: none;
+}
+
+.form button {
+  margin-top: 35px;
+  padding: 15px 35px;
+  background-color: rgb(246, 157, 173);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+.form button:hover {
+  background-color: transparent;
+  color: #f69dad;
+  border: 1px solid #f69dad;
+}
+
+/* ########################## Page 6 ########################33  */
+
+#numbers {
+  margin-bottom: 0;
+  background-color: #f6fcfa;
+}
+
+.cards {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 100px;
+}
+
+.num-card {
+  width: 25%;
+  padding: 30px;
+  text-align: center;
+}
+
+.num-card h1 {
+  font-size: 44px;
+  font-weight: 500;
+}
+
+.num-card p {
+  color: #06cc8ae5;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.vimeo-hdg {
+  text-align: center;
+  padding: 50px;
+}
+
+.vimeo-hdg h1 {
+  padding: 50px;
+  font-size: 40px;
+  color: #8b8b99;
+  font-weight: 400;
+}
+
+hr {
+  width: 100px;
+  margin: 0 auto;
+  border: 1px solid #f69dad;
+  opacity: 0.5;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+iframe {
+  width: 60%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+/* <!-- ############## PAGE 6 ########### -->  */
+#contact-page {
+  padding: 100px 0;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-section, .right-section {
+  width: 32%;
+}
+
+.left-sub {
+  width: 60%;
+  font-weight: 500;
+}
+
+.ctc {
+  font-size: 22px;
+  font-weight: 400;
+  color: #aad236;
+  letter-spacing: 1px;
+  font-family: "caveat", cursive;
+}
+
+.left-section h1, .right-section h1 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.ctc-para {
+  font-size: 16px;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.left-section div {
+  margin-bottom: 30px;
+}
+
+.right-section p {
+  margin-bottom: 20px ;
+}
+
+.right-section input, textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  font-size: 16px;
+  color:#8b8b99;
+}
+
+form {
+  width: 80%;
+}
+
+form button {
+  padding: 10px 35px;
+  background-color: #aad236;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+form button:hover {
+  color: #aad236;
+  background-color: #fff;
+  border: 1px solid #aad236;
+}
+
+footer {
+  background-color: #232323;
+  color: #fff;
+  text-align: center;
+  height: auto;
+  margin-bottom: 0;
+  font-size: 12px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  .shop-cards {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+
+  .shop-cards {
+    display: block;
+    width: 100%;
+  }
+
+  .shopcard {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .newsletter {
+    display: block;
+  }
+
+  .form-left,
+  .form-right {
+    width: 100%;
+  }
+
+  .cards {
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  .num-card {
+    width: 100%;
+  }
+
+  .contact-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .left-sub {
+    width: 100%;
+  }
+}
